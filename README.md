@@ -1,4 +1,4 @@
-# ReactionTime
+## ReactionTime
 <p align="center">
 <img src="https://img.shields.io/badge/swift-4.0%2B-brightgreen.svg" alt="Swift 4.0"/>
 <img src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
@@ -9,7 +9,7 @@
 </p>
 
 
-### What is Vision Framework?
+## What is Vision Framework?
 Vision is a new framework from Apple for iOS 11 and other Apple platforms. 
 It is the [Core ML](https://developer.apple.com/machine-learning/) framework. 
 CoreML is the new framework that makes it really easy to take a machine learning model and run your data through it to get predictions. 
@@ -19,7 +19,6 @@ Using the Vision framework, its really easy to process a live feed from the came
 <p align="center"> 
     <img src= "https://i.imgflip.com/34ht49.gif" />
 </p>
-#
 
 ## Object Tracking
 
@@ -32,7 +31,7 @@ Its just an easy place to get started. Ideally, you would abstract most of this 
 
 Also note, I am assumes you are comfortable with the basics of storyboards and view controllers.
 
-### Start with the AVCaptureSession
+## Start with the AVCaptureSession
 
 We're going to add some lazy properties to our view controller. 
 They just give us access to the `AVCaptureSession` as well as the `AVCaptureVideoPreviewLayer` so the user can see the video feed on the screen. 
@@ -88,7 +87,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
 ```
 
-### Configure AVCaptureSession
+## Configure AVCaptureSession
 
 In order to get video buffers from the AVCaptureSession into the vision system we need to tell the `AVCaptureSession` that we want to be a delegate of its video feed. In `viewDidLoad:` add the following code.
 
